@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Boldtext{
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+        };
+    </style>
+</head>
+<body>
+    <input type="text" id="Input">
+    <button id="submit">add List</button>
+    <button id="Bold">Bold</button><br>
+    <ul id="Addlist">
+
+    </ul>
+
+    <script>
+        const AddListItem = () => {
+          let GetValue = document.getElementById("Input").value;
+          document.getElementById("Input").value = "";
+          let List = document.getElementById("Addlist");
+          List.innerHTML = List.innerHTML + "<li>" + GetValue + "</li>"; 
+        };
+        document.getElementById("submit").addEventListener("click", AddListItem);
+       
+        const BoldValue = () => {
+          let Bold = document.getElementById("Addlist");
+           if (Bold.classList.contains("Boldtext")) {
+            Bold.classList.remove("Boldtext");
+            }
+            else {
+                Bold.classList.add  ("Boldtext");
+            }
+        };
+        document.getElementById("Bold").addEventListener("click", BoldValue);
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+ans 1. two propertys or two than more propertys use that time use object.
+
+ans 2. two condition are there and first condition true and secound condition false, any one condition apply in perticuler statement that time we use loop.
+
+ans 3. two condition are there an any one condition apply that time use branching.
+
+ans 4. array Forach() return is booliun value. (true and False)
+
+ans 5. find Method return is any perticuler property requir that property return.
+       ex. var findMethod = user.find(Name);
